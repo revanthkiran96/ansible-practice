@@ -1,0 +1,35 @@
+
+1   ssh-keygen
+2   ssh-copy-id 172.31.82.71
+8   service sshd restart
+10  ssh-copy-id 172.31.82.71
+11  ssh-copy-id 172.31.87.254
+22  ssh 172.31.82.71
+23  ssh 172.31.87.254
+25  ansible --version
+26  sudo vi /etc/ansible/hosts
+28   ansible all -m ping
+37  vi hosts
+38  sudo vi hosts
+39  ansible --list linuxsevers
+40  sudo vi hosts
+41  ansible --list linuxsevers
+42  sudo vi hosts
+43  ansible --list web
+44  ansible --list db
+45  ansible --list linuxsevers
+46  sudo vi hosts
+47  ansible --list linuxsever
+48  ansible --list linuxservers
+49  ansible --list all
+51  ansible --list India
+52  sudo vi hosts
+53  ansible --list India
+54  ansible --list all
+56  ansible-inventory --graph
+63  mkdir ansiblerevanth
+64  cd ansiblerevanth/
+65  vi inventory
+66  ansible-inventory --graph
+67  ansible-inventory --graph -i inventory
+
