@@ -1,4 +1,10 @@
-
+ yum update -y
+ useradd ansible
+ passwd ansible
+ visudo
+ vi /etc/ssh/sshd_config
+ sudo service sshd restart
+ su - ansible
 1   ssh-keygen
 2   ssh-copy-id 172.31.82.71
 8   service sshd restart
