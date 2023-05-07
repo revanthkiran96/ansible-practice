@@ -38,4 +38,5 @@
 65  vi inventory
 66  ansible-inventory --graph
 67  ansible-inventory --graph -i inventory
+ansible-doc aws_s3
 
