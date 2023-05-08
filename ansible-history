@@ -39,4 +39,9 @@
 66  ansible-inventory --graph
 67  ansible-inventory --graph -i inventory
 ansible-doc aws_s3
-
+ansible all -m user -a "name=re" --become --become-user=root
+ansible all -m user -a "name=re state=absent" --become --become-user=root
+ansible all -m service -a "name=sshd state=started"
+ ansible all -m command -a "/sbin/reboot -t now"
+ ansible all -m copy -a "src=/home/ansible/1 dest=/tmp/"
+ 
