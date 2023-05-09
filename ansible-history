@@ -44,4 +44,11 @@ ansible all -m user -a "name=re state=absent" --become --become-user=root
 ansible all -m service -a "name=sshd state=started"
  ansible all -m command -a "/sbin/reboot -t now"
  ansible all -m copy -a "src=/home/ansible/1 dest=/tmp/"
+ ansible-playbook --syntax-check 1.yaml
+  ansible-playbook -v 1.yaml (show tasks)
+   ansible-playbook -vv 1.yaml 
+    ansible-playbook -vvv 1.yaml
+     ansible-playbook -vvvv 1.yaml
+  ansible-playbook -C 1.yaml (dry run)
+ 
  
