@@ -51,5 +51,8 @@ ansible all -m service -a "name=sshd state=started"
      ansible-playbook -vvvv 1.yaml
   ansible-playbook -C 1.yaml (dry run)
   ansible all -m shell -a "grep rev(username)  /etc/passwd"
- 
+  ansible-vault creat secret.yaml
+   -- username: rev
+      pwhash: password
+  ansible-playbook --ask-vault-pass create-user.yaml
  
