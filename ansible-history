@@ -56,4 +56,6 @@ ansible all -m service -a "name=sshd state=started"
       pwhash: password
   ansible-playbook --ask-vault-pass create-user.yaml
   ansible-vault rekey secret.yaml (to change the password)
+  ansible-vault encrypt secret.yaml
+  ansible-vault decrypt secret.yaml
  
