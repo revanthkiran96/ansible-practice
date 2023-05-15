@@ -50,5 +50,6 @@ ansible all -m service -a "name=sshd state=started"
     ansible-playbook -vvv 1.yaml
      ansible-playbook -vvvv 1.yaml
   ansible-playbook -C 1.yaml (dry run)
+  ansible all -m shell -a "grep rev(username)  /etc/passwd"
  
  
